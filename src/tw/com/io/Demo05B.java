@@ -4,12 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Demo5B {
+public class Demo05B {
 
 	public static void main(String[] args) {
 		//String str = Demo5B.readString();
 		//System.out.println(str);
-		double short_ = Demo5B.readShort();
+		double short_ = Demo05B.readShort();
 		System.out.println(short_);
 	}
 
