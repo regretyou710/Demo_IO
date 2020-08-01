@@ -1,7 +1,5 @@
 package tw.com.file;
 
-import static org.hamcrest.CoreMatchers.not;
-
 import java.io.File;
 import java.io.IOException;
 

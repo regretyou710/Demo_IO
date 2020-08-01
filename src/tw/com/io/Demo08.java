@@ -55,7 +55,7 @@ public class Demo08 {
 			
 			Object obj = ois.readObject();
 			String str = (String) obj;
-			System.out.println(obj);
+			System.out.println(str);
 			
 			Person p = (Person)ois.readObject();			
 			System.out.println(p);
