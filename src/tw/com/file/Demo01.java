@@ -19,12 +19,12 @@ public class Demo01 {
 		// 相對路徑
 		File f1 = new File("hello.txt");
 		// 絕對路徑
-		File f2 = new File("D:/JavaImplement_1090701/Demo_IO/hello.txt");
+		File f2 = new File("D:/myeclipsecode/Demo_IO/hello.txt");
 		System.out.println(f1);
 		System.out.println(f2);
 
 		// 建構式二:
-		File f3 = new File("D:/JavaImplement_1090701", "Demo_IO");
+		File f3 = new File("D:/myeclipsecode", "Demo_IO");
 		System.out.println(f3);
 
 		// 建構式三:
@@ -78,13 +78,13 @@ public class Demo01 {
 
 	/*
 	 * renameTo(File dest):把文件重新命名為指定的文件路徑
-	 * 想要保證返回為true，file1在硬碟中是存在的，且file2在硬碟中是不存在的
+	 * 想要保證返回為true，f1在硬碟中是存在的，且f2在硬碟中是不存在的
 	 */
 	@Test
 	public void test04() {
 		File f1 = new File("hello.txt");
-		File f2 = new File("D:\\JavaImplement_1090701\\Demo_IO\\src\\tw\\com\\file\\hi.txt");
-		boolean renameTo = f2.renameTo(f1);
+		File f2 = new File("D:\\myeclipsecode\\Demo_IO\\src\\tw\\com\\file\\hi.txt");
+		boolean renameTo = f1.renameTo(f2);
 		System.out.println(renameTo);
 	}
 
@@ -100,7 +100,7 @@ public class Demo01 {
 
 		System.out.println();
 
-		File f2 = new File("D:\\JavaImplement_1090701\\Demo_IO");
+		File f2 = new File("D:\\myeclipsecode\\Demo_IO");
 		System.out.println("判斷是否為文件目錄:" + f2.isDirectory());
 		System.out.println("判斷是否為文件:" + f2.isFile());
 		System.out.println("判斷是否存在:" + f2.exists());
